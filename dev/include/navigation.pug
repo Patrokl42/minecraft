@@ -1,0 +1,16 @@
+-
+    var navigation = [
+    {name:'Главная',href:"#"},
+    {name:'Об игре',href:"#"},
+    {name:'Список серверов',href:"#"},
+    {name:'Наша команда',href:"#"},
+    {name:'Донат',href:"#"}
+    ]
+div(class="navigation")
+    ul
+        each item in navigation
+            a(href=item.href)
+                li=item.name
+div(class="clearfix")
+
+

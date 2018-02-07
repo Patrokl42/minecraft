@@ -1,0 +1,15 @@
+-
+    var pictures = [
+    {way:'images/types_4.png',href:"#"},
+    {way:'images/types_3.png',href:"#"},
+    {way:'images/types_1.png',href:"#"},
+    {way:'images/types_2.png',href:"#"}
+    ]
+div(class="types-wrapper")
+    div(class="content-wrapper clearfix")
+        div(class="row clearfix")
+            each item in pictures
+                div(class="col-1-4")
+                    a(href=item.href)
+                        img(src=item.way)
+

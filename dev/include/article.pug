@@ -1,0 +1,29 @@
+-
+    var articles = [
+    {
+        date:'2016-08-04',
+        title:"Страж подводной крепостидовольно сильный противник для начинащего ирока",
+        href:"#",
+        images:"images/article_1.png"
+    },
+    {
+        date:'2016-06-27',
+        title:"Встречайте: белые медведи вхолодных биомах!",
+        href:"#",
+        images:"images/article_3.png"
+    },
+    {
+        date:'2016-04-17',
+        title:"В мобильной версии теперь можно приручить кролика, онстанет верным другом",
+        href:"#",
+        images:"images/article_2.png"
+    }
+    ]
+div(class="articles")
+    div(class="row clearfix")
+        each item in articles
+            div(class="article col-1-3")
+                div(class="information")
+                    strong=item.date
+                    p=item.title
+                img(src=item.images)

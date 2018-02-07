@@ -1,0 +1,26 @@
+-
+    var aside_navigation = [
+    {name:'Мир Minecraft',href:"#",
+    submenu:[{name:'Блоки',href:"#"},
+    {name:'Мобы',href:"#"},{name:'Структуры',href:"#"},
+    {name:'Биомы',href:"#"},{name:'Миры',href:"#"}]},
+    {name:'Industrial craft',href:"#",submenu:[]},
+    {name:'OptiFine',href:"#",submenu:[]},
+    {name:'Forge',href:"#",submenu:[]},
+    {name:'TooManyItems',href:"#",submenu:[]},
+    {name:'RailCraft',href:"#",submenu:[]}
+    ]
+
+div(class="aside")
+    ul
+        each item in aside_navigation
+            li
+                a(href=item.href)=item.name
+                if item.submenu.length > 0
+                    ul(class="submenu")
+                        each values in item.submenu
+                            li
+                                a(href=values.href)=values.name
+
+
+

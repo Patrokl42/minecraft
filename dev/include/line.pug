@@ -1,0 +1,15 @@
+-
+    var icons = [
+    {way:'images/icon_english.png',href:"#"},
+    {way:'images/icon_vk.png',href:"#"},
+    {way:'images/icon_fb.png',href:"#"}
+    ]
+div(class="line-wrapper")
+    div(class="content-wrapper clearfix")
+        div(class="slogan")
+            span="Подключайся и играй на наших серверах!"
+        each item in icons
+            div(class="icons")
+                a(href=item.href)
+                    img(src=item.way)
+
